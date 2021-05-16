@@ -50,7 +50,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 				$_SESSION['user'] = $data['user'];
 				$_SESSION['name'] = $data['name'];
 				$_SESSION['email'] = $data['email'];
-                header('Location:../home.php');
+                header('Location:../after_login/admin.php');
                 exit();
             }
             else if($result['code'] == 7){
@@ -58,7 +58,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 				$_SESSION['user'] = $data['user'];
 				$_SESSION['name'] = $data['name'];
 				$_SESSION['email'] = $data['email'];
-                header('Location:../home.php');
+                header('Location:../after_login/dev.php');
                 exit();
             }
             else if($result['code'] == 0){
@@ -66,7 +66,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 				$_SESSION['user'] = $data['user'];
 				$_SESSION['name'] = $data['name'];
 				$_SESSION['email'] = $data['email'];
-                header('Location:../home.php');
+                header('Location:../after_login/user.php');
                 exit();
             }
             else{
@@ -82,7 +82,7 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 				<div class="login100-pic js-tilt" data-tilt>
 					<img src="images/img-01.png" alt="IMG">
 				</div>
-                <form method="post" action="/home.php">
+                <form method="post" action="">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
 						Login
